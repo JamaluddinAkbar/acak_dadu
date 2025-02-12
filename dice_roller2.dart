@@ -45,7 +45,7 @@ class _DiceRollerState extends State<dice_roller2> {
             padding: const EdgeInsets.only(
               top: 20,
             ),
-            foregroundColor: const Color.fromARGB(255, 255, 255, 255),
+            foregroundColor: const Color.fromARGB(255, 0, 0, 0),
             textStyle: TextStyle(fontSize: 28),
           ),
           child: const Text('Roll Dice!'),
