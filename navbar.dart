@@ -16,15 +16,20 @@ class TabBarDemo extends StatelessWidget {
       home: DefaultTabController(
         length: 3,
         child: Scaffold(
-          appBar: AppBar(
+         appBar: AppBar(
+            title: const Text('Acak Dadu'),
+            titleTextStyle: TextStyle(color: const Color.fromARGB(255, 255, 255, 255), fontSize: 20),
+            backgroundColor: Colors.deepPurple,
             bottom: const TabBar(
+              indicatorColor: Colors.amber,
+              labelColor: Colors.white,
+              unselectedLabelColor: Colors.white70,
               tabs: [
-                Tab(icon: Icon(Icons.directions_boat_outlined)),
-                Tab(icon: Icon(Icons.directions_transit_rounded)),
-                Tab(icon: Icon(Icons.directions_car_outlined)),
+                Tab(text: "Dadu 1",),
+                Tab(text: "Dadu 2",),
+                Tab(text: "Dadu 3",),
               ],
             ),
-            title: const Text('Acak Dadu'),
           ),
           body: const TabBarView(
             children: [
