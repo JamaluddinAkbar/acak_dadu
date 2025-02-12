@@ -17,7 +17,7 @@ class dice_roller1 extends StatefulWidget {
 
 class _DiceRollerState extends State<dice_roller1> {
   var currentDiceRoll1 = 2;
-  var currentDiceRoll2 = 2;
+  var currentDiceRoll2 = 3;
 
   void rollDice() {
     setState(() {
@@ -31,12 +31,11 @@ class _DiceRollerState extends State<dice_roller1> {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Row(
+        Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset('assets/dice-$currentDiceRoll1.png', width: 150),
             SizedBox(width: 20),
-            Image.asset('assets/dice-$currentDiceRoll2.png', width: 150),
           ],
         ),
         TextButton(
@@ -45,7 +44,7 @@ class _DiceRollerState extends State<dice_roller1> {
             padding: const EdgeInsets.only(
               top: 20,
             ),
-            foregroundColor: Colors.white,
+            foregroundColor: const Color.fromARGB(255, 255, 255, 255),
             textStyle: TextStyle(fontSize: 28),
           ),
           child: const Text('Roll Dice!'),
